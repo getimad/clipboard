@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="container mx-auto grid place-content-center h-screen">
-      <header class="flex flex-col items-center gap-6">
+      <header class="flex flex-col items-center gap-6 relative">
         <img class="h-28 w-28" src="./images/white-logo-box.svg" />
         <h1 class="title">A history of everything you copy</h1>
         <div>
@@ -19,9 +19,25 @@
             Instantly access your clipboard on all your devices.
           </p>
         </div>
-        <div class="flex flex-row gap-3">
+        <div class="grid grid-cols-2 gap-4 place-content-center">
           <button class="btn hover:bg-blue-500">Download for iOS</button>
           <button class="btn hover:bg-purple-500">Download for Mac</button>
+        </div>
+        <div class="absolute -bottom-20">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="w-6 h-6 text-primary"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            />
+          </svg>
         </div>
       </header>
     </div>
