@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.title {
+  @apply text-4xl font-bold text-primary;
+}
+
+.text {
+  @apply text-lg text-secondary;
+}
+
+.btn {
+  @apply text-white bg-primary font-bold py-2 px-4 rounded-full;
+}
