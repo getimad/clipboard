@@ -13,7 +13,7 @@
 }
 
 .text {
-  @apply text-lg text-secondary;
+  @apply text-lg text-secondary max-w-[650px];
 }
 
 .btn {
