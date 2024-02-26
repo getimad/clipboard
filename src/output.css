@@ -717,6 +717,10 @@ video {
   gap: 3rem;
 }
 
+.gap-16{
+  gap: 4rem;
+}
+
 .gap-24{
   gap: 6rem;
 }
@@ -731,10 +735,6 @@ video {
 
 .gap-6{
   gap: 1.5rem;
-}
-
-.gap-16{
-  gap: 4rem;
 }
 
 .overflow-hidden{
@@ -754,11 +754,6 @@ video {
      object-fit: cover;
 }
 
-.object-fill{
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-
 .p-12{
   padding: 3rem;
 }
@@ -766,10 +761,6 @@ video {
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.pr-12{
-  padding-right: 3rem;
 }
 
 .text-center{
@@ -854,6 +845,20 @@ video {
   text-decoration-line: underline;
 }
 
+::-moz-selection{
+  --tw-bg-opacity: 1;
+  background-color: rgb(50 50 50 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+::selection{
+  --tw-bg-opacity: 1;
+  background-color: rgb(50 50 50 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .hover\:cursor-pointer:hover{
   cursor: pointer;
 }
@@ -889,14 +894,6 @@ video {
     display: block;
   }
 
-  .md\:inline-block{
-    display: inline-block;
-  }
-
-  .md\:inline{
-    display: inline;
-  }
-
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -907,10 +904,6 @@ video {
 
   .md\:flex-row{
     flex-direction: row;
-  }
-
-  .md\:flex-col{
-    flex-direction: column;
   }
 
   .md\:gap-24{

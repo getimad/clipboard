@@ -23,3 +23,7 @@
 .link {
   @apply text-sm text-secondary hover:underline;
 }
+
+::selection {
+  @apply bg-primary text-white;
+}
