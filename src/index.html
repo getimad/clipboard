@@ -7,39 +7,86 @@
     <title>Clipboard</title>
   </head>
   <body>
-    <div class="container mx-auto grid place-content-center h-screen">
-      <header class="flex flex-col items-center gap-6 relative">
-        <img class="h-28 w-28" src="./images/white-logo-box.svg" />
-        <h1 class="title">A history of everything you copy</h1>
-        <div>
-          <p class="text text-center">
-            Cliboard allows you to track and organize everything you copy.
-          </p>
-          <p class="text text-center">
-            Instantly access your clipboard on all your devices.
-          </p>
-        </div>
-        <div class="grid grid-cols-2 gap-4 place-content-center">
-          <button class="btn hover:bg-blue-500">Download for iOS</button>
-          <button class="btn hover:bg-purple-500">Download for Mac</button>
-        </div>
-        <div class="absolute -bottom-20">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
-            class="w-6 h-6 text-primary"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="m19.5 8.25-7.5 7.5-7.5-7.5"
+    <div class="container mx-auto">
+      <div class="grid place-content-center h-screen">
+        <header class="flex flex-col items-center gap-6 relative">
+          <img class="h-28 w-28" src="./images/white-logo-box.svg" />
+          <h1 class="title-4xl">A history of everything you copy</h1>
+          <div>
+            <p class="text text-center">
+              Cliboard allows you to track and organize everything you copy.
+            </p>
+            <p class="text text-center">
+              Instantly access your clipboard on all your devices.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-4 place-content-center">
+            <button class="btn hover:bg-blue-500">Download for iOS</button>
+            <button class="btn hover:bg-purple-500">Download for Mac</button>
+          </div>
+          <div class="absolute -bottom-20">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="w-6 h-6 text-primary"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </div>
+        </header>
+      </div>
+
+      <!-- Section 1 -->
+      <section class="flex flex-col items-center gap-5">
+        <h1 class="title-4xl">Keep track of your snippets</h1>
+        <p class="text text-center">
+          Clipboard instantly stores any item you copy in the cloud, meaning you
+          can access
+          <br />
+          your snippets immediately on all your devices. Our Mac and iOS apps
+          <br />
+          will help you organize everything.
+        </p>
+        <div
+          class="flex flex-row gap-12 mt-12 justify-center items-center max-w-[800px] max-h-[600px] w-full h-full overflow-hidden rounded-2xl border"
+        >
+          <div>
+            <img
+              class="object-cover"
+              src="./images/kathy-toth-JaAVKyaOnKo-unsplash.jpg"
             />
-          </svg>
+          </div>
+          <div class="flex flex-col gap-12 pr-12">
+            <div>
+              <h3 class="title-xl">Quick Search</h3>
+              <p class="text mt-3">
+                Easily search your snippets by content, category, web address,
+                application, and more.
+              </p>
+            </div>
+            <div>
+              <h3 class="title-xl">iCloud Sync</h3>
+              <p class="text mt-3">
+                Instatly saves and syncs snippets across all your devices.
+              </p>
+            </div>
+            <div>
+              <h3 class="title-xl">Completely History</h3>
+              <p class="text mt-3">
+                Retrieve any snippets from the first moment you started using
+                the app.
+              </p>
+            </div>
+          </div>
         </div>
-      </header>
+      </section>
     </div>
   </body>
 </html>
