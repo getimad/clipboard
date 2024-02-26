@@ -853,6 +853,14 @@ video {
      object-fit: cover;
 }
 
+.p-5{
+  padding: 1.25rem;
+}
+
+.p-12{
+  padding: 3rem;
+}
+
 .pl-12{
   padding-left: 3rem;
 }
