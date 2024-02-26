@@ -4,8 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.title {
+.title-4xl {
   @apply text-4xl font-bold text-primary;
+}
+
+.title-xl {
+  @apply text-xl font-bold text-primary;
 }
 
 .text {
