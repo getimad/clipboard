@@ -548,6 +548,10 @@ video {
 
 .container{
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 @media (min-width: 640px){
@@ -613,28 +617,16 @@ video {
   margin-top: 2rem;
 }
 
-.mt-52{
-  margin-top: 13rem;
-}
-
-.mt-36{
-  margin-top: 9rem;
-}
-
-.mt-24{
-  margin-top: 6rem;
-}
-
-.mt-16{
-  margin-top: 4rem;
-}
-
 .flex{
   display: flex;
 }
 
 .grid{
   display: grid;
+}
+
+.hidden{
+  display: none;
 }
 
 .h-24{
@@ -657,10 +649,6 @@ video {
   height: 100vh;
 }
 
-.h-10{
-  height: 2.5rem;
-}
-
 .max-h-\[600px\]{
   max-height: 600px;
 }
@@ -681,16 +669,16 @@ video {
   width: 100%;
 }
 
-.w-10{
-  width: 2.5rem;
-}
-
 .max-w-\[800px\]{
   max-width: 800px;
 }
 
 .max-w-\[900px\]{
   max-width: 900px;
+}
+
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .grid-cols-2{
@@ -745,6 +733,10 @@ video {
   gap: 1.5rem;
 }
 
+.gap-16{
+  gap: 4rem;
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -757,14 +749,14 @@ video {
   border-width: 1px;
 }
 
-.bg-red-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-fill{
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .p-12{
@@ -792,16 +784,6 @@ video {
 .text-secondary{
   --tw-text-opacity: 1;
   color: rgb(98 98 98 / var(--tw-text-opacity));
-}
-
-.text-red-50{
-  --tw-text-opacity: 1;
-  color: rgb(254 242 242 / var(--tw-text-opacity));
-}
-
-.text-red-500{
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .transition-colors{
@@ -841,6 +823,7 @@ video {
 }
 
 .text{
+  max-width: 650px;
   font-size: 1.125rem;
   line-height: 1.75rem;
   --tw-text-opacity: 1;
@@ -899,4 +882,42 @@ video {
 .group:hover .group-hover\:bg-purple-500{
   --tw-bg-opacity: 1;
   background-color: rgb(168 85 247 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px){
+  .md\:block{
+    display: block;
+  }
+
+  .md\:inline-block{
+    display: inline-block;
+  }
+
+  .md\:inline{
+    display: inline;
+  }
+
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:flex-col{
+    flex-direction: column;
+  }
+
+  .md\:gap-24{
+    gap: 6rem;
+  }
+
+  .md\:text-left{
+    text-align: left;
+  }
 }
