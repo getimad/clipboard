@@ -4,6 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-image: url("./images/background.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(10px);
+}
+
 .title-4xl {
   @apply text-4xl font-bold text-primary;
 }
