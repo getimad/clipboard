@@ -677,6 +677,22 @@ video {
   max-width: 900px;
 }
 
+@keyframes bounce{
+  0%, 100%{
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50%{
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.animate-bounce{
+  animation: bounce 1s infinite;
+}
+
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
